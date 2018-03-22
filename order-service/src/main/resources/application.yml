@@ -4,7 +4,7 @@ spring:
   profiles: development
   data:
     mongodb:
-      host: 222.201.187.167
+      host: 172.16.1.90
       port: 27017
   jackson:
     date-format: "YYYY-MM-dd"
@@ -13,7 +13,7 @@ spring:
 security:
   oauth2:
     resource:
-      userInfoUri: http://localhost:8181/uaa/user
+      userInfoUri: http://172.16.1.90:8181/uaa/user
     client:
       client-id: acme
   ignored: /api/**
@@ -24,4 +24,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://172.16.1.91:8761/eureka/

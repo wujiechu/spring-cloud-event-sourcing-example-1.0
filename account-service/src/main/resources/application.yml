@@ -13,10 +13,10 @@ spring:
 security:
   oauth2:
     resource:
-      userInfoUri: http://localhost:8181/uaa/user
+      userInfoUri: http://172.16.1.90:8181/uaa/user
     client:
       client-id: acme
-      access-token-uri: http://localhost:8787
+      access-token-uri: http://116.56.140.66:8787
 eureka:
   instance:
     prefer-ip-address: true
@@ -24,4 +24,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://172.16.1.91:8761/eureka/
